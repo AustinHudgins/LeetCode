@@ -57,7 +57,7 @@ public class RemoveDuplicatesFromSortedArray {
 		int index = 1;
 		for(int num : nums)
 		{
-			if(num != nums[index])
+			if(num != nums[index] && num != nums[index-1])
 			{
 				nums[index++] = num;
 			}
