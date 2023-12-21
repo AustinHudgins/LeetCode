@@ -49,24 +49,17 @@ public class RemoveDuplicatesFromSortedArray {
 
 	public static int removeDuplicates(int[] nums) 
 	{	
-		System.out.println("Old List:");
-		for(int num : nums)
-		{
-			System.out.print(num);
-		}
 		int index = 1;
+		if(nums.length==1)
+		{
+			return index;
+		}
 		for(int num : nums)
 		{
-			if(num != nums[index] && num != nums[index-1])
+			if(num != nums[index-1])
 			{
 				nums[index++] = num;
 			}
-		}
-		System.out.println("\nK: " + index);
-		System.out.println("New List:");
-		for(int num : nums)
-		{
-			System.out.print(num);
 		}
         return index;
     }
