@@ -10,7 +10,7 @@ public class LeetCode
        
         
         //Problems.MergeSortedArray.merge(nums1,m,nums2,n);
-       System.out.println(Problems.RemoveDuplicatesFromSortedArray.removeDuplicates(nums1));
+       System.out.println(Problems.RemoveDuplicatesFromSortedArrayII.removeDuplicates(nums1));
      
     }   
 }
